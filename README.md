@@ -77,4 +77,18 @@ $ vagrant ssh
 vagrant@precise32 wget -qO- 127.0.0.1
  ```
 
+##Networking
 
+1. Doing so is a simple edit to the Vagrantfile, which now looks like this:
+
+```ruby
+Vagrant.configure("2") do |config|
+	config.vm.box = "hashicorp/precise32"
+	config.vm.provision :shell, path: "bootstrap.sh"
+	config.vm.networking :forwarded_port, guest: 80, host: 4567
+	config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
+end
+```
+2. Run `vagrant reload` or `vagrant up`
+
+3. Load [http://127.0.0.1:4567](http://127.0.0.1:4567) 
