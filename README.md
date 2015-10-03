@@ -25,3 +25,23 @@ $ vagrant up
 ```bash
 $ vagrant ssh
 ```
+## Synced Folders
+
+1. Vagrant shares your project directory to the `/vagrant` directory in your gest machine.
+
+```bash
+
+$ vagrant up
+
+$ vagrant ssh
+
+vagrant@precise32:~$ ls /vagrant
+Vagrantfile
+
+vagrant@precise32:~$ touch /vagrant/foo
+vagrant@precise32:~$ exit
+
+$ ls
+foo Vagrantfile
+```
+
