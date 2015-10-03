@@ -92,3 +92,28 @@ end
 2. Run `vagrant reload` or `vagrant up`
 
 3. Load [http://127.0.0.1:4567](http://127.0.0.1:4567) 
+
+##Share
+
+
+### Login to hashicorps atlas
+
+1. Before being able to share your Vagrant envoriment you'll need an account on [HashiCorp's Atlas](https://atlas.hashicorp.com/) don't worry, it's free. Once you have an account, log using `vagrant login`
+
+```bash
+$ vagrant login
+Username or Email: hugobrilhante
+Password (will be hidden):
+You're now logged in!
+```
+
+### Share
+1. Once you're logged in, run `vagrant share`
+
+```bash
+$ vagrant share
+...
+==> default: Your Vagrant Share is running! Name: rambunctious-orangutan-8613
+==> default: URL: http://rambunctious-orangutan-8613.vagrantshare.com
+...
+```
