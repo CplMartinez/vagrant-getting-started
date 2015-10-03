@@ -117,3 +117,7 @@ $ vagrant share
 ==> default: URL: http://rambunctious-orangutan-8613.vagrantshare.com
 ...
 ```
+
+#Teardown
+
+1. Check [Vagrant docs](https://docs.vagrantup.com/v2/getting-started/teardown.html)
