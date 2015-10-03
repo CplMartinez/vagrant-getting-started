@@ -13,3 +13,15 @@ $ vagrant init
 ```bash
 $ vagrant box add hashicorp/precise3
 ```
+
+## Up and SSH
+
+1. Run virtual machine without a UI with `vagrant up`
+```bash
+$ vagrant up
+```
+
+2. SSH into the machine `vagrant ssh`.
+```bash
+$ vagrant ssh
+```
